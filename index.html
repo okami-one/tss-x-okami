@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Street Jutsu</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <!-- CSS WebSlides -->
+    <link rel="stylesheet" type='text/css' media='all' href="static/css/webslides.css">
+
+    <!-- Optional - CSS SVG Icons (Font Awesome) -->
+    <link rel="stylesheet" type='text/css' media='all' href="static/css/svg-icons.css">
+
+    <!-- FAVICONS -->
+    <link rel="shortcut icon" sizes="16x16" href="static/images/favicons/favicon.png">
+    <link rel="shortcut icon" sizes="32x32" href="static/images/favicons/favicon-32.png">
+    <link rel="apple-touch-icon icon" sizes="76x76" href="static/images/favicons/favicon-76.png">
+    <link rel="apple-touch-icon icon" sizes="120x120" href="static/images/favicons/favicon-120.png">
+    <link rel="apple-touch-icon icon" sizes="152x152" href="static/images/favicons/favicon-152.png">
+    <link rel="apple-touch-icon icon" sizes="180x180" href="static/images/favicons/favicon-180.png">
+    <link rel="apple-touch-icon icon" sizes="192x192" href="static/images/favicons/favicon-192.png">
+
+    <!-- Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#333333">
+    <style>
+      /* Popup container */
+      .popup {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+      }
+
+      /* The actual popup (appears on top) */
+      .popup .popuptext {  
+        visibility: hidden;
+        width: 500px;
+        min-height: 119px;
+        background-color: #d4a3ff;
+        color: #333;
+        font-weight: 400;
+        font-size: small;
+        text-align: justify;
+        border-radius: 6px;
+        padding: 25px;
+        position: absolute;
+        z-index: 3;
+        top: 0;
+        right: 50px;
+        margin-left: -80px;
+      }
+
+      /* Popup arrow */
+      .popup .popuptext::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -17px;
+        margin-left: -5px;
+        border-width: 10px;
+        border-style: solid;
+        border-color: transparent transparent transparent #d4a3ff;
+      }
+
+      /* Toggle this class when clicking on the popup container (hide and show the popup) */
+      .popup .show {
+        visibility: visible;
+        -webkit-animation: fadeIn 1s;
+        animation: fadeIn 1s
+      }
+
+      /* Add animation (fade in the popup) */
+      @-webkit-keyframes fadeIn {
+        from {opacity: 0;}
+        to {opacity: 1;}
+      }
+
+      @keyframes fadeIn {
+        from {opacity: 0;}
+        to {opacity:1 ;}
+      }
+
+      .popup{
+        position: absolute;
+        right: 0;
+        z-index: 3;
+        background-color: #63faff;
+        padding: 12px;
+      }
+
+      .pulsing{
+        transform: scale(1);
+        animation: pulse 2s infinite;
+      }
+
+      @keyframes pulse {
+      0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+      }
+
+      70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+      }
+
+      100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+      }
+    }
+    </style>
+
+  </head>
+  <body>
+    <main role="main">
+
+      <article id="webslides" class="vertical">
+        <!-- Quick Guide
+          - Each parent <section> in the <article id="webslides"> element is an individual slide.
+          - Vertical sliding = <article id="webslides" class="vertical">
+          - <div class="wrap"> = container 90% / <div class="wrap size-50"> = 45%;
+        -->
+
+        <section>
+
+            <span class="background" style="background-image:url('./static/images/bg/01.png')"></span>
+            <div class="popup" onclick="myFunction('pop1')">
+              <i class="fas fa-comment pulsing"></i>
+              <span class="popuptext" id="pop1">
+                So, this presentation wasn't meant to be self explanatory. So I had to add this comment section at last minute to elaborate my points.
+                This banner is something I came up with when setting the base aesthetics in place. As you can see, there are two main
+                inspirations to it. <b>1. Irezumi (Yakuza Tattoo) & 2. Retrowave colour pallet</b> <br/><br/><div style="font-weight: 500;text-align: right;">-Okami</div>
+              </span>
+            </div>
+
+            <!--.wrap = container (width: 90%) -->
+            <div class="wrap aligncenter">
+                <h1><strong style="color: white; background-color: black;">STREET JUTSU<br/>街の術</strong></h1>
+                <p class="text-intro">
+                    <span  style="color: white; background-color: black;">
+                        Own the streets.<br/>
+                    </span>
+                </p>
+            </div>
+            <!-- .end .wrap -->
+          
+            <footer class="bg-blue">
+                <!--.wrap o <nav> = container 1200px -->
+                <div class="wrap">
+                <p>
+                    <span class="alignleft">
+                    <strong>OKAMI&nbsp;&nbsp;&nbsp;x&nbsp;&nbsp;&nbsp;URBAN MONKEY</strong>
+                    </span>
+                </p>
+                </div>
+            </footer>
+
+        </section>
+        
+        <section>
+            
+          <div class="popup" onclick="myFunction('pop2')">
+            <i class="fas fa-comment pulsing"></i>
+            <span class="popuptext" id="pop2">
+              Inking on body in Japan has always been an outlawed, shady business since it's inception.
+              Even before it was picked up by Yakuza to as a tradition.
+              <br/><br/>
+              When I was deciding on picking the aesthetics for my graffiti, I picked Irezumi style because the core values
+              that define them are not any different that those of the street.
+            </span>
+          </div>
+            <!--.wrap = container (width: 90%) -->
+            <div class="wrap aligncenter">
+               <div class="grid">
+                   <div class="column slide-top" style="text-align: right;">
+                     <h3>Self Expression</h3>
+                     <h3>Strength</h3>
+                     <h3>Fraternal Bond</h3>
+                     <h3>Heritage</h3>
+                   </div>
+                   <div class="column">
+                     <img src="./static/images/bg/02.jpg">
+                     <p style="color: white; background-color: #444;">A tattooed man's back, c. 1875</p>
+                   </div>
+                   <div class="column slide-bottom content-left">
+                     <h3>Criminality</h3>
+                     <h3>Rebellious</h3>
+                     <h3>Violent</h3>
+                   </div>
+                 </div>
+            </div>
+            <!-- .end .wrap -->
+  
+        </section>
+
+        <section>
+            
+          <div class="popup" onclick="myFunction('pop3')">
+            <i class="fas fa-comment pulsing"></i>
+            <span class="popuptext" id="pop3">
+              Apart from Japanese elements, other things and colour palettes from my work is a direct reference to pop culture in 80s and 90s.
+              Because, I believe it brings that sense of comfort to all of the viewers who are from the certain age group that we belong to.
+              <br/><br/>
+              This nostalgic feeling combined with the tribal/ancient vibes that Japanese elements is what I try achieve from my style.
+            </span>
+          </div>
+            <!--.wrap = container (width: 90%) -->
+            <div class="wrap aligncenter">
+               <div class="grid">
+                   <div class="column slide-top" style="text-align: right;">
+                     <h3>Nostalgia</h3>
+                     <h3>Reminiscence</h3>
+                     <h3>Simpler Times</h3>
+                     <h3>Chill vibes</h3>
+                   </div>
+                   <div class="column">
+                     <img src="./static/images/bg/03.png">
+                     <p style="color: white; background-color: rgb(108, 22, 116);">Stuff on table.</p>
+                   </div>
+                   <div class="column slide-bottom content-left">
+                     <h3>Past</h3>
+                     <h3>Comfort Zone</h3>
+                     <h3>Blissful Ignorance</h3>
+                   </div>
+                 </div>
+            </div>
+            <!-- .end .wrap -->
+  
+        </section>
+       
+        <section>
+            
+          <div class="popup" onclick="myFunction('pop4')">
+            <i class="fas fa-comment pulsing"></i>
+            <span class="popuptext" id="pop4">
+              So, as of now. I have thought of making four designs for the collection. and if I deliver them before the deadline, I will attempt to create more.
+              <br/><br/>As per the discussion we had, I came up with these 4 designs,for which I used the templates you provided me as guidelines and then worked my way up.
+            </span>
+          </div>
+            <!--.wrap = container (width: 90%) -->
+            <div class="wrap">
+                <h1><strong>DESIGNS</strong></h1>
+                <ul class="flexblock gallery">
+                  <li>
+                    <a href="#slide=5" title="Skater">
+                      <figure>
+                        <img alt="Thumbnail" src="./static/images/thumb/1.png">
+                        <figcaption>
+                            <h2>Skater Samurai</h2>
+                          </figcaption>
+                      </figure>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#slide=6" title="Ravana">
+                      <figure>
+                        <img alt="Thumbnail" src="./static/images/thumb/2.png">
+                        <figcaption>
+                            <h2>Irezumi Ravana</h2>
+                        </figcaption>
+                      </figure>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#slide=7" title="Acala">
+                      <figure>
+                        <img alt="Thumbnail" src="./static/images/thumb/3.png">
+                        <figcaption>
+                            <h2>Gangsta Acala</h2>
+                        </figcaption>
+                      </figure>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#slide=8" title="Apsara">
+                      <figure>
+                        <img alt="Thumbnail" src="./static/images/thumb/4.png">
+                        <figcaption>
+                            <h2>Apsara</h2>
+                        </figcaption>
+                      </figure>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            <!-- .end .wrap -->
+
+        </section>
+        
+        <section>
+            <div class="popup" onclick="myFunction('pop5')">
+              <i class="fas fa-comment pulsing"></i>
+              <span class="popuptext" id="pop5">
+                The first thing that comes to my mind when I hear "Urban Monkey" is that Intergalactic deck which has <b>स्केट स्केट स्केट</b> on it.
+                <br/><br/>
+                So I thought creating a design that incorporates that skateboard in it ( if it is okay with y'all) and came up with this.
+                <br/><br/><b>This design uses the 250mm x 200mm FRONT artwork template as its base.</b>
+              </span>
+            </div>
+
+            <!--.wrap = container (width: 90%) -->
+            <div class="wrap aligncenter">
+                <h2>Skater Samurai</h2>
+                <div class="grid" >
+                   <div class="column">
+                     <img src="./static/images/1/collage.png">
+                   </div>
+                </div>
+            </div>
+            <!-- .end .wrap -->
+  
+       </section>
+        
+       <section>
+                
+            <div class="popup" onclick="myFunction('pop6')">
+              <i class="fas fa-comment pulsing"></i>
+              <span class="popuptext" id="pop6">
+                For this Ravana design, I want to emulate the back tattoos Yakuza people do. so this design will be very prominent, menacing and
+                show of raw, masculing strength.<br/><br/> It will depict giant Ravana in japanese style, fighting the human sized monkeys from Ramayana.
+                With japanese tattoo elements like stormy wind, lightening thatrages the battelfield.
+                
+                <br/><br/><b>This design uses the 307.61mm x 350mm BACK artwork template as its base.</b>
+              </span>
+            </div>
+            
+            <!--.wrap = container (width: 90%) -->
+            <div class="wrap aligncenter">
+                <h2>Irezumi Ravana</h2>
+                <div class="grid" >
+                   <div class="column">
+                     <img src="./static/images/2/collage.png">
+                   </div>
+                </div>
+            </div>
+            <!-- .end .wrap -->
+ 
+        </section>
+        
+       <section>
+           
+          <div class="popup" onclick="myFunction('pop7')">
+            <i class="fas fa-comment pulsing"></i>
+            <span class="popuptext" id="pop7">
+              Acala ( or Achalnath ), a Japanese deity with roots in Hinduism, is one of the most common subjects for Irezumi tatoos.
+              So, I want to spice it up a bit by drawing it in a more modern style, with very prominent lineart and cel-shading.
+              <br/><br/>He will be depicted doing gangster hand sign and resting his sword on his shoulder. Emphasis will be on his exaggerated violent expressions.
+              
+              <br/><br/><b>This design uses the 280mm x 22.95mm FRONT artwork template as its base.</b> He will be peeking out from the rectangular region.
+            </span>
+          </div>
+
+            <!--.wrap = container (width: 90%) -->
+            <div class="wrap aligncenter">
+                <h2>Gangsta Acala</h2>
+                <div class="grid" >
+                   <div class="column">
+                     <img src="./static/images/4/collage.png">
+                   </div>
+                </div>
+            </div>
+            <!-- .end .wrap -->
+ 
+        </section>
+        
+       <section>
+           
+          <div class="popup" onclick="myFunction('pop8')">
+            <i class="fas fa-comment pulsing"></i>
+            <span class="popuptext" id="pop8">
+              So, I have been skeptical about adding Apsara as one of the designs because I will have to draw her anatomy just
+              as exaggerated as it is traditionally, and I dont know how brand-friendly it will be.
+              <br/><br/>
+              <b>I will need your inputs on it.</b> I have included this sketch I had made some time ago in the moodboard. Let's discuss about it when we meet!
+            </span>
+          </div>
+
+            <!--.wrap = container (width: 90%) -->
+            <div class="wrap aligncenter">
+                <h2>Apsara</h2>
+                <div class="grid">
+                  <div class="grid" >
+                     <div class="column">
+                       <img src="./static/images/3/collage.png">
+                     </div>
+                  </div>
+            </div>
+            <!-- .end .wrap -->
+ 
+        </section>
+        
+      </article>
+      <!-- end article -->
+    </main>
+    <!-- end main -->
+
+   <!-- A global footer
+
+     <footer role="contentinfo">
+      <div class="wrap">
+        <p>An <a href="https://github.com/webslides/webslides">open source solution</a>, by <a href="https://twitter.com/webslides">@webslides</a>.</p>
+      </div>
+    </footer>  -->
+
+    <!-- Required -->
+    <script src="static/js/webslides.js"></script>
+    <script>
+      window.ws = new WebSlides();
+    </script>
+
+    <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+    <script defer src="static/js/svg-icons.js"></script>
+    <script src="https://kit.fontawesome.com/858df7756d.js" crossorigin="anonymous"></script>
+    <script>
+      // When the user clicks on <div>, open the popup
+      function myFunction(id) {
+        var popup = document.getElementById(id);
+        popup.classList.toggle("show");
+      }
+      </script>
+
+  </body>
+</html>
+
+<!-- https://ikimashodotorg.files.wordpress.com/2019/05/sanja-matsuri-yakuza-2019-2.jpg -->
