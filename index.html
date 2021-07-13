@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Street Jutsu</title>
+    <title>Indian Cyberpunk</title>
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
@@ -73,6 +73,15 @@
         animation: fadeIn 1s
       }
 
+      .flexblock.gallery li {
+        width: 12%;
+      }
+
+      .slide-title{
+        z-index: 10;
+        position: absolute;
+      }
+
       /* Add animation (fade in the popup) */
       @-webkit-keyframes fadeIn {
         from {opacity: 0;}
@@ -128,26 +137,9 @@
 
         <section>
 
+            
+            <span class="background" style="background-image:url('./static/images/bg/vaporwave.gif')"></span>
             <span class="background" style="background-image:url('./static/images/bg/01.png')"></span>
-            <div class="popup" onclick="myFunction('pop1')">
-              <i class="fas fa-comment pulsing"></i>
-              <span class="popuptext" id="pop1">
-                So, this presentation wasn't meant to be self explanatory. So I had to add this comment section at last minute to elaborate my points.
-                This banner is something I came up with when setting the base aesthetics in place. As you can see, there are two main
-                inspirations to it. <b>1. Irezumi (Yakuza Tattoo) & 2. Retrowave colour pallet</b> <br/><br/><div style="font-weight: 500;text-align: right;">-Okami</div>
-              </span>
-            </div>
-
-            <!--.wrap = container (width: 90%) -->
-            <div class="wrap aligncenter">
-                <h1><strong style="color: white; background-color: black;">STREET JUTSU<br/>街の術</strong></h1>
-                <p class="text-intro">
-                    <span  style="color: white; background-color: black;">
-                        Own the streets.<br/>
-                    </span>
-                </p>
-            </div>
-            <!-- .end .wrap -->
           
             <footer class="bg-blue">
                 <!--.wrap o <nav> = container 1200px -->
@@ -162,126 +154,85 @@
 
         </section>
         
-        <section>
+        <section class="bg-gradient-v">
             
-          <div class="popup" onclick="myFunction('pop2')">
-            <i class="fas fa-comment pulsing"></i>
-            <span class="popuptext" id="pop2">
-              Inking on body in Japan has always been an outlawed, shady business since it's inception.
-              Even before it was picked up by Yakuza to as a tradition.
-              <br/><br/>
-              When I was deciding on picking the aesthetics for my graffiti, I picked Irezumi style because the core values
-              that define them are not any different that those of the street.
-            </span>
+          
+          <div class="wrap">
+            <img src="./static/images/cyber.png">
           </div>
-            <!--.wrap = container (width: 90%) -->
-            <div class="wrap aligncenter">
-               <div class="grid">
-                   <div class="column slide-top" style="text-align: right;">
-                     <h3>Self Expression</h3>
-                     <h3>Strength</h3>
-                     <h3>Fraternal Bond</h3>
-                     <h3>Heritage</h3>
-                   </div>
-                   <div class="column">
-                     <img src="./static/images/bg/02.jpg">
-                     <p style="color: white; background-color: #444;">A tattooed man's back, c. 1875</p>
-                   </div>
-                   <div class="column slide-bottom content-left">
-                     <h3>Criminality</h3>
-                     <h3>Rebellious</h3>
-                     <h3>Violent</h3>
-                   </div>
-                 </div>
-            </div>
-            <!-- .end .wrap -->
-  
         </section>
 
-        <section>
-            
-          <div class="popup" onclick="myFunction('pop3')">
-            <i class="fas fa-comment pulsing"></i>
-            <span class="popuptext" id="pop3">
-              Apart from Japanese elements, other things and colour palettes from my work is a direct reference to pop culture in 80s and 90s.
-              Because, I believe it brings that sense of comfort to all of the viewers who are from the certain age group that we belong to.
-              <br/><br/>
-              This nostalgic feeling combined with the tribal/ancient vibes that Japanese elements is what I try achieve from my style.
-            </span>
+        <section class="bg-gradient-v">
+
+          
+          <div class="wrap">
+            <img src="./static/images/india.png">
           </div>
-            <!--.wrap = container (width: 90%) -->
-            <div class="wrap aligncenter">
-               <div class="grid">
-                   <div class="column slide-top" style="text-align: right;">
-                     <h3>Nostalgia</h3>
-                     <h3>Reminiscence</h3>
-                     <h3>Simpler Times</h3>
-                     <h3>Chill vibes</h3>
-                   </div>
-                   <div class="column">
-                     <img src="./static/images/bg/03.png">
-                     <p style="color: white; background-color: rgb(108, 22, 116);">Stuff on table.</p>
-                   </div>
-                   <div class="column slide-bottom content-left">
-                     <h3>Past</h3>
-                     <h3>Comfort Zone</h3>
-                     <h3>Blissful Ignorance</h3>
-                   </div>
-                 </div>
-            </div>
-            <!-- .end .wrap -->
   
         </section>
        
         <section>
             
-          <div class="popup" onclick="myFunction('pop4')">
-            <i class="fas fa-comment pulsing"></i>
-            <span class="popuptext" id="pop4">
-              So, as of now. I have thought of making four designs for the collection. and if I deliver them before the deadline, I will attempt to create more.
-              <br/><br/>As per the discussion we had, I came up with these 4 designs,for which I used the templates you provided me as guidelines and then worked my way up.
-            </span>
-          </div>
             <!--.wrap = container (width: 90%) -->
             <div class="wrap">
                 <h1><strong>DESIGNS</strong></h1>
                 <ul class="flexblock gallery">
                   <li>
-                    <a href="#slide=5" title="Skater">
+                    <a href="#slide=5" title="Kathakali">
                       <figure>
-                        <img alt="Thumbnail" src="./static/images/thumb/1.png">
+                        <img alt="Thumbnail" src="./static/images/bg/kathakali.png">
                         <figcaption>
-                            <h2>Skater Samurai</h2>
+                            <h2>Kathakali</h2>
                           </figcaption>
                       </figure>
                     </a>
                   </li>
                   <li>
-                    <a href="#slide=6" title="Ravana">
+                    <a href="#slide=6" title="Police">
                       <figure>
-                        <img alt="Thumbnail" src="./static/images/thumb/2.png">
+                        <img alt="Thumbnail" src="./static/images/bg/police.png">
                         <figcaption>
-                            <h2>Irezumi Ravana</h2>
+                            <h2>Police</h2>
                         </figcaption>
                       </figure>
                     </a>
                   </li>
                   <li>
-                    <a href="#slide=7" title="Acala">
+                    <a href="#slide=7" title="Dancer">
                       <figure>
-                        <img alt="Thumbnail" src="./static/images/thumb/3.png">
+                        <img alt="Thumbnail" src="./static/images/bg/dancer.png">
                         <figcaption>
-                            <h2>Gangsta Acala</h2>
+                            <h2>Dancer</h2>
                         </figcaption>
                       </figure>
                     </a>
                   </li>
                   <li>
-                    <a href="#slide=8" title="Apsara">
+                    <a href="#slide=8" title="Mandir">
+                      <figure>
+                        <img alt="Thumbnail" src="./static/images/bg/mandir.png">
+                        <figcaption>
+                            <h2>Mandir</h2>
+                        </figcaption>
+                      </figure>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#slide=9" title="Mughal">
+                      <figure>
+                        <img alt="Thumbnail" src="./static/images/bg/mughal.png">
+                        <figcaption>
+                            <h2>Mughal</h2>
+                        </figcaption>
+                      </figure>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#slide=10" title="Six">
                       <figure>
                         <img alt="Thumbnail" src="./static/images/thumb/4.png">
                         <figcaption>
-                            <h2>Apsara</h2>
+                            <h2>Six</h2>
                         </figcaption>
                       </figure>
                     </a>
@@ -293,105 +244,41 @@
         </section>
         
         <section>
-            <div class="popup" onclick="myFunction('pop5')">
-              <i class="fas fa-comment pulsing"></i>
-              <span class="popuptext" id="pop5">
-                The first thing that comes to my mind when I hear "Urban Monkey" is that Intergalactic deck which has <b>स्केट स्केट स्केट</b> on it.
-                <br/><br/>
-                So I thought creating a design that incorporates that skateboard in it ( if it is okay with y'all) and came up with this.
-                <br/><br/><b>This design uses the 250mm x 200mm FRONT artwork template as its base.</b>
-              </span>
-            </div>
 
-            <!--.wrap = container (width: 90%) -->
-            <div class="wrap aligncenter">
-                <h2>Skater Samurai</h2>
-                <div class="grid" >
-                   <div class="column">
-                     <img src="./static/images/1/collage.png">
-                   </div>
-                </div>
-            </div>
-            <!-- .end .wrap -->
-  
+          <span class="background" style="background-image:url('./static/images/kathakali.png')"></span>
+
        </section>
         
        <section>
-                
-            <div class="popup" onclick="myFunction('pop6')">
-              <i class="fas fa-comment pulsing"></i>
-              <span class="popuptext" id="pop6">
-                For this Ravana design, I want to emulate the back tattoos Yakuza people do. so this design will be very prominent, menacing and
-                show of raw, masculing strength.<br/><br/> It will depict giant Ravana in japanese style, fighting the human sized monkeys from Ramayana.
-                With japanese tattoo elements like stormy wind, lightening thatrages the battelfield.
-                
-                <br/><br/><b>This design uses the 307.61mm x 350mm BACK artwork template as its base.</b>
-              </span>
-            </div>
-            
-            <!--.wrap = container (width: 90%) -->
-            <div class="wrap aligncenter">
-                <h2>Irezumi Ravana</h2>
-                <div class="grid" >
-                   <div class="column">
-                     <img src="./static/images/2/collage.png">
-                   </div>
-                </div>
-            </div>
-            <!-- .end .wrap -->
+
+        <span class="background" style="background-image:url('./static/images/police.png')"></span>
  
         </section>
         
        <section>
-           
-          <div class="popup" onclick="myFunction('pop7')">
-            <i class="fas fa-comment pulsing"></i>
-            <span class="popuptext" id="pop7">
-              Acala ( or Achalnath ), a Japanese deity with roots in Hinduism, is one of the most common subjects for Irezumi tatoos.
-              So, I want to spice it up a bit by drawing it in a more modern style, with very prominent lineart and cel-shading.
-              <br/><br/>He will be depicted doing gangster hand sign and resting his sword on his shoulder. Emphasis will be on his exaggerated violent expressions.
-              
-              <br/><br/><b>This design uses the 280mm x 22.95mm FRONT artwork template as its base.</b> He will be peeking out from the rectangular region.
-            </span>
-          </div>
 
-            <!--.wrap = container (width: 90%) -->
-            <div class="wrap aligncenter">
-                <h2>Gangsta Acala</h2>
-                <div class="grid" >
-                   <div class="column">
-                     <img src="./static/images/4/collage.png">
-                   </div>
-                </div>
-            </div>
-            <!-- .end .wrap -->
+        <span class="background" style="background-image:url('./static/images/apsara.png')"></span>
  
         </section>
         
        <section>
-           
-          <div class="popup" onclick="myFunction('pop8')">
-            <i class="fas fa-comment pulsing"></i>
-            <span class="popuptext" id="pop8">
-              So, I have been skeptical about adding Apsara as one of the designs because I will have to draw her anatomy just
-              as exaggerated as it is traditionally, and I dont know how brand-friendly it will be.
-              <br/><br/>
-              <b>I will need your inputs on it.</b> I have included this sketch I had made some time ago in the moodboard. Let's discuss about it when we meet!
-            </span>
-          </div>
 
-            <!--.wrap = container (width: 90%) -->
-            <div class="wrap aligncenter">
-                <h2>Apsara</h2>
-                <div class="grid">
-                  <div class="grid" >
-                     <div class="column">
-                       <img src="./static/images/3/collage.png">
-                     </div>
-                  </div>
-            </div>
-            <!-- .end .wrap -->
- 
+        <span class="background" style="background-image:url('./static/images/mandir.png')"></span>
+           
+        </section>
+
+
+       <section>
+
+        <span class="background" style="background-image:url('./static/images/mughal.png')"></span>
+           
+        </section>
+
+
+       <section>
+
+        <span class="background" style="background-image:url('./static/images/mughal.png')"></span>
+           
         </section>
         
       </article>
